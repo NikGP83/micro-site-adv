@@ -1,0 +1,18 @@
+.app-form {
+    display: flex;
+}
+
+.mobile-form {
+    width: 380px;
+}
+
+
+.app-form__adv-img {
+    width: 900px;
+    height: 720px;
+    background-image: url(./img/scale_1200_1.png);
+}
+
+.qr-code__text {
+    text-transform: uppercase;
+}
