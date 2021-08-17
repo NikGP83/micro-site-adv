@@ -1,4 +1,5 @@
 import React from 'react';
+import './telephone-display.scss';
 
 
 const TelephoneDisplay = () => {
@@ -10,7 +11,7 @@ const TelephoneDisplay = () => {
         console.log(e.target.dataset.num)
     }
     return (
-        <div className="mobile-form">
+        <div className="mobile_form">
                     <h1 className="mobile-form__call-to-action">
                         Введите ваш номер
                         мобильного телефона

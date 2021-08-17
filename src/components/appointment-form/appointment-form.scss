@@ -1,0 +1,16 @@
+.app_form {
+    display: flex;
+
+    &__adv_img {
+        width: 900px;
+        height: 720px;        
+        background-image: url("../../img/scale_1200_1.png");
+        background-repeat: no-repeat;
+    }
+
+    
+}
+
+.qr_code__text {
+    text-transform: uppercase;
+}

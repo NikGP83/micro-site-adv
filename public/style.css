@@ -1,18 +1,10 @@
-.app-form {
-    display: flex;
+.page {
+    height: 100%;       
 }
 
-.mobile-form {
-    width: 380px;
-}
-
-
-.app-form__adv-img {
-    width: 900px;
-    height: 720px;
-    background-image: url(./img/scale_1200_1.png);
-}
-
-.qr-code__text {
-    text-transform: uppercase;
+body {
+    min-width: 1280px;
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto", "Arial", sans-serif;
 }
