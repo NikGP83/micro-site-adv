@@ -37,7 +37,7 @@ const TelephoneDisplay = () => {
                         <input type="checkbox" id="user-agree" className="visually-hidden agree-input-checkbox"/>
                         <label htmlFor="user-agree"><p className="input-label">Согласие на обработку персональных данных</p></label>
                         </div>
-                        <button className="mobile-form__send-btn">Подтвердить номер</button>
+                        <button className="numbers-btn send-btn">Подтвердить номер</button>
                     </form>
                     </div>
                 </div>
