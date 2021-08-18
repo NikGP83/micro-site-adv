@@ -24,6 +24,7 @@
     &__label {
         display: block;
         text-align: center;
+        user-select: none;
     }
 }
 
@@ -60,6 +61,7 @@
     padding: 0;
     text-align: center;
     color: #565656;
+    user-select: none;
 }
 
 .agree-box__wrapper {
@@ -86,3 +88,4 @@
     width: 24px;
     height: 20px;
 }
+
