@@ -60,3 +60,14 @@
     height: 40px;
     
 }
+
+.agree-input-checkbox:checked+label::after {
+    content: "";
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    background: url("../../img/check.svg");
+    width: 24px;
+    height: 20px;    
+}
+
