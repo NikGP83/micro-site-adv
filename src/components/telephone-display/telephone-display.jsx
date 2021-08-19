@@ -1,4 +1,5 @@
 import React from 'react';
+import NumberFormat from 'react-number-format';
 import './telephone-display.scss';
 
 
@@ -18,7 +19,7 @@ const TelephoneDisplay = () => {
                         мобильного телефона
                     </h1>
                     <form onSubmit={formHandler} action="post" className="mobile-form__display">
-                        <input type="tel" id="mobile-tel" className="visually-hidden" autoFocus/>
+                        <NumberFormat format="+7 (###)###-##-##" mask="_" allowEmptyFormatting={true} className="mobile-input"/>
                         <label htmlFor="mobile-tel" className="mobile-form__label">и с Вами свяжется наш менеждер для дальнейшей консультации</label>
                         <ul onClick={getCons} className="mobile-form__numbers-list">
                             <li><button data-num="1" className="numbers-btn">1</button></li>

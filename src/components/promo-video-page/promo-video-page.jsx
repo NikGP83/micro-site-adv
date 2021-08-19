@@ -4,19 +4,14 @@ import './promo-video.scss';
 
 const PromoVideoPage = () => {
  
-    //    const history = useHistory()
-    //    const toAnotherPage = () => history.push("/appointment-form");
+       const history = useHistory()
+       const toAnotherPage = () => history.push("/appointment-form");
 
-    //    setTimeout(toAnotherPage , 4000)
+       setTimeout(toAnotherPage , 5000)
   
     return (
-        <section className="promo">
-            
-            <div className="qr-block">
-                
-                
-                
-            </div>
+        <section className="promo">   
+ 
 
         </section>
     )
