@@ -1,25 +1,20 @@
 import React from 'react';
 import { useHistory } from 'react-router-dom';
-import YouTube from 'react-youtube';
-import './ho-ho.scss';
+import './promo-video.scss';
 
 const PromoVideoPage = () => {
+ 
+    //    const history = useHistory()
+    //    const toAnotherPage = () => history.push("/appointment-form");
 
-    const opts = {
-        width: `1280`,
-        height: `760`,
-    }    
-       const history = useHistory()
-       const toAnotherPage = () => history.push("/appointment-form");
-
-       setTimeout(toAnotherPage , 4000)
+    //    setTimeout(toAnotherPage , 4000)
   
     return (
-        <section>
+        <section className="promo">
             
-            <div className="ho-ho">
+            <div className="qr-block">
                 
-                <YouTube videoId="dbvi_S3fy2M" opts={opts}/>
+                
                 
             </div>
 
