@@ -4,9 +4,9 @@ import './appointment-form.scss';
 
 const AppointmentForm = () => {
 
-    
+
     return (
-        <main>
+        <main class="main-page">
             <section className="app_form">
                 <TelephoneDisplay />
                 <div className="advant">
@@ -14,10 +14,10 @@ const AppointmentForm = () => {
                         <span className="visually-hidden">Закрыть</span>
                     </button>
                     <div className="qr-code">
-                    <div className="qr_code__img">
-                            <img src="../../img/index_1.png" alt="qr-код"/>
-                        </div>
                         <p className="qr_code__text">Сканируйте QR-код для получения дополнительной информации</p>
+                        <div className="qr_code__img">
+                            <img src="./img/index_1.png" alt="qr-код" />
+                        </div>
                     </div>
                 </div>
             </section>

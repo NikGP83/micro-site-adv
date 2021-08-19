@@ -1,5 +1,5 @@
 .app_form {
-    display: flex;
+    display: flex;        
 }
 
 .advant {
@@ -25,6 +25,7 @@
     color: #FFFF;
     font-size: 16px;
     text-align: right;
+    margin-right: 10px;
 }
 
 .qr_code__img { 
@@ -40,6 +41,7 @@
     right: 57px;
     background: #FFFFFF;
     border: 2px solid #000000;
+    cursor: pointer;
 }
 
 .form-close::before, .form-close::after {

@@ -36,7 +36,9 @@
     font-size: 16px;
     font-weight: 600;
     line-height: 18px;
-    border: 2px solid #000000
+    border: 2px solid #000000;
+    cursor: pointer;
+    outline: none;
 }
 
 .numbers-btn:active {

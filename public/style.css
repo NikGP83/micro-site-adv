@@ -2,8 +2,9 @@
     height: 100%;       
 }
 
-body {
+body { 
     min-width: 1280px;
+    height: 720px;   
     padding: 0;
     margin: 0;
     font-family: "Roboto", "Arial", sans-serif;
