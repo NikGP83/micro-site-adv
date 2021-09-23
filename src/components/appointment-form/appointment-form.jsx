@@ -6,7 +6,7 @@ const AppointmentForm = () => {
 
 
     return (
-        <main class="main-page">
+        <main className="main-page">
             <section className="app_form">
                 <TelephoneDisplay />
                 <div className="advant">

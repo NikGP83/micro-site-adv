@@ -7,7 +7,7 @@ const PromoVideoPage = () => {
        const history = useHistory()
        const toAnotherPage = () => history.push("/appointment-form");
 
-       setTimeout(toAnotherPage , 5000)
+       setTimeout(toAnotherPage , 2000)
   
     return (
         <section className="promo">   

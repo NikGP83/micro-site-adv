@@ -39,6 +39,8 @@
     border: 2px solid #000000;
     cursor: pointer;
     outline: none;
+    background-color: transparent;
+    user-select: none;
 }
 
 .numbers-btn:active {

@@ -1,16 +1,22 @@
-import React from 'react';
-import NumberFormat from 'react-number-format';
+import React, {useState } from 'react';
+import InputMask from 'react-input-mask';
 import './telephone-display.scss';
 
 
 const TelephoneDisplay = () => {
-    const formHandler = (e) => {
-        e.preventDefault()
-    }
+    
+    const [state, setState] = useState();
 
-    const getCons = (e) => {
-        console.log(e.target.dataset.num)
-    }
+    const formHandler = (e) => {
+        e.preventDefault()        
+    };
+
+    const append = (ix) => setState((state) => {
+        state+= "" + ix;
+        console.log(state)
+        return state
+    })
+    
     return (
         <div className="mobile-form">
             <div className="mobile-form__wrapper">
@@ -18,21 +24,13 @@ const TelephoneDisplay = () => {
                         Введите ваш номер
                         мобильного телефона
                     </h1>
-                    <form onSubmit={formHandler} action="post" className="mobile-form__display">
-                        <NumberFormat format="+7 (###)###-##-##" mask="_" allowEmptyFormatting={true} className="mobile-input"/>
+                    
+                    <form onSubmit={formHandler} action="post" className="mobile-form__display">                        
+                        <InputMask mask="+7\(999) 999-99-99" value={state} onChange={() => undefined}  alwaysShowMask="true" className="mobile-input"/>
                         <label htmlFor="mobile-tel" className="mobile-form__label">и с Вами свяжется наш менеждер для дальнейшей консультации</label>
-                        <ul onClick={getCons} className="mobile-form__numbers-list">
-                            <li><button data-num="1" className="numbers-btn">1</button></li>
-                            <li><button data-num="2" className="numbers-btn">2</button></li>
-                            <li><button data-num="3" className="numbers-btn">3</button></li>
-                            <li><button data-num="4" className="numbers-btn">4</button></li>
-                            <li><button data-num="5" className="numbers-btn">5</button></li>
-                            <li><button data-num="6" className="numbers-btn">6</button></li>
-                            <li><button data-num="7" className="numbers-btn">7</button></li>
-                            <li><button data-num="8" className="numbers-btn">8</button></li>
-                            <li><button data-num="9" className="numbers-btn">9</button></li>
-                            <li><button data-num="delete" className="numbers-btn clear--btn">Стереть</button></li>
-                            <li><button data-num="0" className="numbers-btn">0</button></li>
+                        <ul className="mobile-form__numbers-list">
+                            {Array(10).fill().map((_, ix) => (<button key={ix} onClick={()=>append(ix)} className="numbers-btn">{ix}</button>))}
+                            <li><button onClick={() => setState(state.slice(-1))} className="numbers-btn clear--btn">Стереть</button></li>
                         </ul>
                         <div className="agree-box__wrapper">
                         <input type="checkbox" id="user-agree" className="visually-hidden agree-input-checkbox"/>
@@ -46,4 +44,6 @@ const TelephoneDisplay = () => {
 };
 
 export default TelephoneDisplay;
+
+
 
